@@ -1,7 +1,4 @@
 <?php
-                 // $t = $arr[$i][
-                    //     array_search($arr[$i], array_column($arr[$i]['inventory_id'],'inventory_id'))
-                    // ];
 
     function allElectronic($arr, $string){
         $tmp=[];

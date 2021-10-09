@@ -38,12 +38,13 @@ function fibonaci($arr){
     for($i=0; $i<count($arr)+2; $i++){
         if($i<count($arr)){
             array_push($tmp, $arr[$i]);
+            echo $arr[$i]. " <== if ". "<br>";
         }elseif($i==4){
             $tm = $tmp[$i-1]+2;
             array_push($tmp, $tm);
         }
         else{
-            $tm = $arr[$i-1]+$arr[$i-2]+$arr[$i-3];
+            $tm = $tmp[$i-1]+$tmp[$i-2]+$tmp[$i-3];
             array_push($tmp, $tm);
         }
     }
@@ -69,16 +70,21 @@ function FizzBuzz($n){
 
 $tahun1=1900;
 $tahun2=2000;
+//non aktifkan komentar jika ingin memanggilnya
 // echo kabisat($tahun1, $tahun2);
 
+
 $string="Ibu Ratna antar ubi";
+//non aktifkan komentar jika ingin memanggilnya
 // echo palindrome($string);
 
 $kalimat= "I am A Great human";
-// echo reverse($kalimat);
+//non aktifkan komentar jika ingin memanggilnya
+echo reverse($kalimat);
 
 $arr=[15,1,3];
-echo implode(" ", fibonaci($arr));
+//non aktifkan komentar jika ingin memanggilnya
+// echo implode(" ", fibonaci($arr));
 
 
 $n=10;
